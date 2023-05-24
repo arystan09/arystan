@@ -1,0 +1,129 @@
+
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  font-size: 24px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.title-container {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.name-container label {
+  margin-right: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group {
+  margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 5px;
+  transform: scale(1.5);
+}
+
+.checkbox-group label {
+  font-size: 1.2em;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.table-container {
+  margin-bottom: 20px;
+}
+
+.table-container table {
+  width: 100%;
+}
+
+.table-container th {
+  text-align: left;
+}
+
+.table-container input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+th,
+td {
+  padding: 5px;
+}
+
+.form-row {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 20px;
+}

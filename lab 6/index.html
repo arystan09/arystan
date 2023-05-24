@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Race Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>RACE REGISTRATION FORM</h1>
+  <form id="registrationForm">
+    <label for="email">E-mail</label>
+    <input type="text" id="email" required>
+
+    <div class="title-container">
+      <p>Title: &nbsp; </p>
+      <div class="checkbox-container">
+        <input type="checkbox" id="mrCheckbox">
+        <label for="mrCheckbox">Mr.&nbsp;</label>
+        <input type="checkbox" id="msCheckbox">
+        <label for="msCheckbox">Ms.&nbsp;</label>
+        <input type="checkbox" id="mrsCheckbox">
+        <label for="mrsCheckbox">Mrs.&nbsp;</label>
+      </div>
+    </div> 
+
+    <div class="name-container">
+      <label for="firstName">First Name: &nbsp;</label>
+      <input type="text" id="firstName" required>
+      <label for="lastName">&nbsp;&nbsp; Last Name: &nbsp;</label>
+      <input type="text" id="lastName" required>
+    </div>    
+    
+    <label for="address">Complete Postal Mailing Address (with Postal Code & Country)</label>
+    <textarea id="address" required></textarea>
+  <br>
+  <br>
+
+    <div class="form-row">
+      <label for="phone">Phone: &nbsp;</label>
+      <input type="text" id="phone" required>
+      <label for="fax">&nbsp;&nbsp;&nbsp;&nbsp;Fax: &nbsp;</label>
+      <input type="text" id="fax">
+    </div>
+    
+    <div class="form-row">
+      <label for="occupation">Occupation: &nbsp;</label>
+      <input type="text" id="occupation">
+    </div>
+    
+    <div class="form-row">
+      <label for="maritalStatus">Marital Status: &nbsp;</label>
+      <input type="text" id="maritalStatus">
+    </div>
+    
+    <h3>Emergency contact:</h3>
+    <div class="form-row">
+      <label for="emergencyName">Name: &nbsp;</label>
+      <input type="text" id="emergencyName" required>
+      <label for="emergencyEmail">&nbsp;&nbsp;&nbsp;&nbsp;Email: &nbsp;</label>
+      <input type="text" id="emergencyEmail" required>
+    </div>
+    
+    <div class="form-row">
+      <label for="emergencyPhone">Phone: &nbsp; </label>
+      <input type="text" id="emergencyPhone" required>
+    </div>
+    
+    <div class="checkbox-group">
+    </div>
+    
+      <h3>Select Trip: </h3>
+      <div class="checkbox-container">
+        <input type="checkbox" id="stageRace">
+        <label for="stageRace">&nbsp; Stage Race &nbsp; </label>
+        <input type="checkbox" id="everestMarathon">
+        <label for="everestMarathon"> &nbsp; Mt. Everest Challenge Marathon (4 day trip) &nbsp; </label>
+        <input type="checkbox" id="everestBikeRally">
+        <label for="everestBikeRally">&nbsp; Mt. Everest Bike Rally &nbsp;</label>
+      </div>
+    </div>
+    
+    <div class="checkbox-group">
+      <h3>I am a: </h3>
+      <div class="checkbox-container">
+        <input type="checkbox" id="runner">
+        <label for="runner">&nbsp;Runner&nbsp; </label>
+        <input type="checkbox" id="walker">
+        <label for="walker">&nbsp;Walker&nbsp; </label>
+        <input type="checkbox" id="cyclist">
+        <label for="cyclist">&nbsp;Cyclist&nbsp; </label>
+      </div>
+    </div>
+    
+    <div class="checkbox-group">
+      <h3>T-Shirt Size</h3>
+      <div class="checkbox-container">
+        <input type="checkbox" id="smallSize">
+        <label for="smallSize">&nbsp;Small&nbsp;</label>
+        <input type="checkbox" id="mediumSize">
+        <label for="mediumSize">&nbsp;Medium&nbsp;</label>
+        <input type="checkbox" id="largeSize">
+        <label for="largeSize">&nbsp;Large&nbsp;</label>
+        <input type="checkbox" id="xlargeSize">
+        <label for="xlargeSize">&nbsp;X-large&nbsp;</label>
+      </div>
+    </div>
+    
+    <div class="checkbox-group">
+      <h3>Smoker: </h3>
+      <div class="checkbox-container">
+        <input type="checkbox" id="smokerYes">
+        <label for="smokerYes">&nbsp;Yes&nbsp;</label>
+        <input type="checkbox" id="smokerNo">
+        <label for="smokerNo">&nbsp;No&nbsp;</label>
+      </div>
+    </div>
+    
+    <h3>Room Sharing Preference</h3>
+    <textarea id="roomSharingPreference"></textarea>
+
+    <h3>Passport Details</h3>
+    <label for="passportName">Exact name as it appears</label>
+    <input type="text" id="passportName" required>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Number</th>
+          <th>Date Issued</th>
+          <th>Where Issued</th>
+          <th>Date Expires</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="passportNumber" required></td>
+          <td><input type="text" id="dateIssued" required></td>
+          <td><input type="text" id="whereIssued" required></td>
+          <td><input type="text" id="dateExpires" required></td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Date of Birth</th>
+          <th>Age</th>
+          <th>Place of Birth</th>
+          <th>Citizen of</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="dob" required></td>
+          <td><input type="text" id="age" required></td>
+          <td><input type="text" id="pob" required></td>
+          <td><input type="text" id="citizen" required></td>
+        </tr>
+      </table>
+    </div>
+    
+    <p><a href="">See Booking Conditions for all the trips.</a></p>
+
+   
+    <div class="form-row">
+      <input type="checkbox" id="agreeTerms" required>
+      <label for="agreeTerms">I agree to all booking terms & conditions</label>
+    </div>
+    
+    
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
